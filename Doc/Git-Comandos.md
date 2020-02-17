@@ -20,3 +20,6 @@ git status
 
 `git branch -a` - verificando as branch locais e remotas
 
+## Navegando nas branches
+`git branch`- mostras a branch em que estamos trabalhando
+`git branch -a`-mmostras as branches remotas
