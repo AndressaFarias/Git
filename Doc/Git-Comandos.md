@@ -23,3 +23,8 @@ git status
 ## Navegando nas branches
 `git branch`- mostras a branch em que estamos trabalhando
 `git branch -a`-mmostras as branches remotas
+
+## atualizar repositório local
+`git pull`
+O comando git pull é usado para buscar e baixar conteúdo de um repositório remoto e atualizar imediatamente o repositório local. 
+
