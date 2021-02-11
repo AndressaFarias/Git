@@ -28,3 +28,18 @@ git status
 `git pull`
 O comando git pull é usado para buscar e baixar conteúdo de um repositório remoto e atualizar imediatamente o repositório local. 
 
+
+# Atualizar senha de autenticação no git
+**ERRO**:
+_remote: HTTP Basic: Access denied_
+_fatal: Authentication failed_
+
+**CORREÇÃO**
+Para corrigir é simples, porém a solução não se encontra tão facilmente pela internet. 
+- Abra o Menu Iniciar do Windows e 
+- procure por Gerenciador de Credenciais.
+- Ao abrir a janela do Gerenciador, clique em Credenciais do Windows.
+- Abaixo na lista de credenciais, irá existir as várias credenciais salvas pelo Windows, dentre elas uma lista de credenciais genéricas, que é onde as credenciais do GitLab são salvas. Basta identificar a linha referente ao seu repositório e excluí-la, ou atualizar a senha ali mesmo.
+Image for post
+Gerenciador de Credenciais do Windows, navegador até lista de credenciais genéricas
+Pronto, problema resolvido, basta rodar o comando para clonar seu repositório novamente!
