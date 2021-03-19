@@ -1,6 +1,6 @@
 # Comandos Git
 
-## erificar a branch
+## Verificar a branch
 `git branch`
 
 
@@ -27,6 +27,21 @@ git status
 ## atualizar repositório local
 `git pull`
 O comando git pull é usado para buscar e baixar conteúdo de um repositório remoto e atualizar imediatamente o repositório local. 
+
+
+## atualizar branch com conteudo de outra branch
+    Vamos supor que você está trabalhando com 3 branchs: master, branch1, branch2
+
+    Vamos criar uma outra branch chamada juntar_branchs e vamos entrar nela e fazer o merge dessas branchs dessa maneira:
+
+    git checkout -b juntar_branchs #para criar a branch e entrar nela
+    git merge branch1 #junta a branch1 com a branch atual
+    git merge branch2 #junta a branch2 com a branch atual
+
+    
+    [https://cursos.alura.com.br/forum/topico-estou-com-duvida-no-processo-de-criar-uma-branch-nova-e-depois-atualizar-ela-e-fazer-o-merge-33955]
+
+
 
 
 # Atualizar senha de autenticação no git
