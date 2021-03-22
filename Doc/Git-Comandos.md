@@ -1,28 +1,27 @@
 # Comandos Git
 
-## Verificar a branch
-`git branch`
+# BRANCH
 
+**Criar uma nova branch**
+    Vamos nomear o nosso novo branch como «style».
+    EXECUTE:
 
-## Crie um branch
-Vamos nomear o nosso novo branch como «style».
-
-EXECUTE:
-
-~~~
-git checkout -b style
-git status
-~~~
+`git checkout -b style`
+`git status`
 
 :exclamation: Nota: `git checkout -b <branch name>` é o atalho de `git branch <branch name>` seguido por `git checkout <branch name>`.
 
 :exclamation: Note que o comando `git status` avisa que você está no branch style.
 
+
+**Verificar a branch atual**
+`git branch` - mostras a branch em que estamos trabalhando
+
+**Verificar a branch locais e remotas**
 `git branch -a` - verificando as branch locais e remotas
 
-## Navegando nas branches
-`git branch`- mostras a branch em que estamos trabalhando
-`git branch -a`-mmostras as branches remotas
+
+# REPOSITÓRIOS
 
 ## atualizar repositório local
 `git pull`
@@ -30,13 +29,13 @@ O comando git pull é usado para buscar e baixar conteúdo de um repositório re
 
 
 ## atualizar branch com conteudo de outra branch
-    Vamos supor que você está trabalhando com 3 branchs: master, branch1, branch2
+   Vamos supor que você está trabalhando com 3 branchs: *master, branch1, branch2*
 
-    Vamos criar uma outra branch chamada juntar_branchs e vamos entrar nela e fazer o merge dessas branchs dessa maneira:
+   Vamos criar uma outra branch chamada *juntar_branchs* e vamos entrar nela e fazer o merge dessas branchs dessa maneira:
 
-    git checkout -b juntar_branchs #para criar a branch e entrar nela
-    git merge branch1 #junta a branch1 com a branch atual
-    git merge branch2 #junta a branch2 com a branch atual
+   `git checkout -b juntar_branchs` #para criar a branch e entrar nela
+   `git merge branch1` #junta a branch1 com a branch atual
+   `git merge branch2` #junta a branch2 com a branch atual
 
     
     [https://cursos.alura.com.br/forum/topico-estou-com-duvida-no-processo-de-criar-uma-branch-nova-e-depois-atualizar-ela-e-fazer-o-merge-33955]
