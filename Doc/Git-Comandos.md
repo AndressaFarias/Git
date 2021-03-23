@@ -21,6 +21,12 @@
 `git branch -a` - verificando as branch locais e remotas
 
 
+
+# CONFIGURAÇÃO
+
+**mudar editor**
+    `git config --global core.editor vim`
+
 # REPOSITÓRIOS
 
 ## atualizar repositório local
