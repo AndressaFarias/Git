@@ -27,6 +27,12 @@
 **mudar editor**
     `git config --global core.editor vim`
 
+**mudar e-mail**
+    `git config --global user.email nome@serv.kkk`
+
+**verificar variaveis**
+    `git config --global -l` 
+
 # REPOSITÓRIOS
 
 ## atualizar repositório local
