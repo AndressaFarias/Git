@@ -1,5 +1,9 @@
 # Comandos Git
 
+
+
+
+
 # BRANCH
 
 **Criar uma nova branch**
@@ -33,6 +37,33 @@
 **verificar variaveis**
     `git config --global -l` 
 
+
+# DIFF
+
+git --no-pager log prod-20210323.02..prod-20210324.01 --oneline --pretty=format:'[%h](http://github.com/loggi/loggi-web/commit/%H): %s by %an' --reverse
+
+
+
+# REBASE
+ - o rebase em resumo é fazer um git checkout na master
+ - faz um git pull pra ter as ultimas modificacoes da master
+ - ae voce faz git rebase <sua branch>
+
+
+
+vc faz um git push -f depois pra tua branch qdo tiver dentro dela
+14h09
+pq ele refaz sua linha de commit
+14h09
+da tua branch
+
+
+
+
+
+14h09
+com o q entrou na master
+
 # REPOSITÓRIOS
 
 ## atualizar repositório local
@@ -43,7 +74,7 @@ O comando git pull é usado para buscar e baixar conteúdo de um repositório re
 ## atualizar branch com conteudo de outra branch
    Vamos supor que você está trabalhando com 3 branchs: *master, branch1, branch2*
 
-   Vamos criar uma outra branch chamada *juntar_branchs* e vamos entrar nela e fazer o merge dessas branchs dessa maneira:
+   **Vamos criar uma outra branch chamada *juntar_branchs* e vamos entrar nela** e fazer o merge dessas branchs dessa maneira:
 
    `git checkout -b juntar_branchs` #para criar a branch e entrar nela
    `git merge branch1` #junta a branch1 com a branch atual
