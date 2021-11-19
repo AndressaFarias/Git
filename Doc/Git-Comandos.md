@@ -1,73 +1,46 @@
-# Comandos Git
-
-
-
-
-
 # BRANCH
+| `git checkout -b NomeDaBranch`    | Cria uma nova branch e já muda para ela |
+| `git branch`                      | Mostra qual é a branch em que estamos trabalhando |
+| `git branch -a`                   | Retorna as branch locais e remotas |
 
-**Criar uma nova branch**
-    Vamos nomear o nosso novo branch como «style».
+_Exemplo:_ 
+    Vamos criar e nomear o nosso novo branch como «style».
     EXECUTE:
+    `git checkout -b style`
+    `git status`
 
-`git checkout -b style`
-`git status`
+   :exclamation: Nota: `git checkout -b <branch name>` é o atalho de `git branch <branch name>` seguido por `git checkout <branch name>`.
 
-:exclamation: Nota: `git checkout -b <branch name>` é o atalho de `git branch <branch name>` seguido por `git checkout <branch name>`.
-
-:exclamation: Note que o comando `git status` avisa que você está no branch style.
-
-
-**Verificar a branch atual**
-`git branch` - mostras a branch em que estamos trabalhando
-
-**Verificar a branch locais e remotas**
-`git branch -a` - verificando as branch locais e remotas
-
-
+   :exclamation: Note que o comando `git status` avisa que você está no branch style.
 
 # CONFIGURAÇÃO
-
-**mudar editor**
-    `git config --global core.editor vim`
-
-**mudar e-mail**
-    `git config --global user.email nome@serv.kkk`
-
-**verificar variaveis**
-    `git config --global -l` 
+| `git config --global core.editor vim`             | muda o editor padrão para ser o vim |
+| `git config --global user.email nome@serv.kkk`    | mudar e-mail  | 
+| `git config --global -l`                          | retorna as variaveis  configuradas | 
 
 
-# DIFF
+# TAG
+| `git tag` |  lista tags disponiveis |
+| `git tag -l " V1.85*"` | busca apenas a série 1.85 |
 
-git --no-pager log prod-20210323.02..prod-20210324.01 --oneline --pretty=format:'[%h](http://github.com/loggi/loggi-web/commit/%H): %s by %an' --reverse
+
 
 
 
 # REBASE
- - o rebase em resumo é fazer um git checkout na master
- - faz um git pull pra ter as ultimas modificacoes da master
+ - o rebase em resumo é fazer um git checkout na master.
+ - faz um git pull pra ter as ultimas modificacoes da master.
  - ae voce faz git rebase <sua branch>
+ 
+ _exemplo_
+    faz um `git push -f` - pra branch de trabalho qdo estiver dentro dela;
+    ele refaz sua linha de commit da tua branch
+    com o q entrou na master
 
-
-
-vc faz um git push -f depois pra tua branch qdo tiver dentro dela
-14h09
-pq ele refaz sua linha de commit
-14h09
-da tua branch
-
-
-
-
-
-14h09
-com o q entrou na master
 
 # REPOSITÓRIOS
+| `git pull`    | atualiza repositório local | 
 
-## atualizar repositório local
-`git pull`
 O comando git pull é usado para buscar e baixar conteúdo de um repositório remoto e atualizar imediatamente o repositório local. 
 
 
@@ -90,6 +63,8 @@ O comando git pull é usado para buscar e baixar conteúdo de um repositório re
 **ERRO**:
 _remote: HTTP Basic: Access denied_
 _fatal: Authentication failed_
+
+
 
 **CORREÇÃO**
 Para corrigir é simples, porém a solução não se encontra tão facilmente pela internet. 
